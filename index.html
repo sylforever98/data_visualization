@@ -1,0 +1,1254 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>警情警力分析</title>
+<link href="css/style.css"  rel="stylesheet" type="text/css" media="all" />
+<script src="js/echarts.min.js" charset="utf-8"></script>
+
+
+<body>
+<div class="bnt">
+  <div class="topbnt_left fl">
+   <ul><li class="active"><a href="#">警情警力</a></li>
+      <li><a href="#">实有人口</a></li>
+      <li><a href="#">流动人口</a></li>
+      <li><a href="#">实名制</a></li>
+   </ul>
+  </div>
+  <h1 class="tith1 fl">警情警力分析</h1>
+  <div class=" fr topbnt_right">
+   <ul><li><a href="#">活动情况</a></li>
+      <li><a href="#">矛盾纠纷</a></li>
+      <li><a href="#">舆情</a></li>
+      <li><a href="#">交通</a></li>
+      <li><a href="#">返回</a></li>
+   </ul>
+  </div>
+</div>
+<!-- bnt end -->
+<div class="left1">
+    <div class="lefttime"><h2 class="tith2 pt6">统计时间</h2>
+     <div class="lefttime_text">
+        <ul>
+          <li class="bg active">今日</li>
+          <li></li>
+          <li class="bg">本周</li>
+          <li></li>
+          <li class="bg">本月</li>
+          <li></li>
+          <li class="bg">本季</li>
+          <li></li>
+          <li class="bg">本年</li>
+        </ul>
+     </div>
+    </div>
+    <div class="lefttoday"><h2 class="tith2 pt17">今日警情</h2>
+    <div class="lefttoday_tit"><p class="fl">地区：甘孜</p><p class="fr">2018-06-14</p></div>
+    <div class="lefttoday_number">
+      <div class="widget-inline-box text-center fl">
+        <p>处警数</p>
+        <h3 class="pt6 ceeb1fd">54</h3>
+        <h4 class="text-muted pt6">环比<img src="img/iconup.png" height="16" />2%</h4>
+      </div>
+      <div class="widget-inline-box text-center fl">
+         <p>接警数</p>
+        <h3 class="pt6 c24c9ff">54</h3>
+        <h4 class="text-muted pt6">环比<img src="img/icondown.png" height="16" />3%</h4>
+      </div>
+      <div class="widget-inline-box text-center fl">
+         <p>有效警情</p>
+        <h3 class="pt6 cffff00">4</h3>
+        <h4 class="text-muted pt6">环比<img src="img/icondown.png" height="16" />3%</h4>
+      </div>
+      <div class="widget-inline-box text-center fl">
+         <p>无效警情</p>
+        <h3 class="pt6 c11e2dd">4</h3>
+        <h4 class="text-muted pt6">环比<img src="img/icondown.png" height="16" />3%</h4>
+      </div>
+    </div>
+    <!-- lefttoday_number end -->
+
+    <div class="lefttoday_bar">
+      <ul>
+        <li class="c1 big1" style="top: 25%;left: 16%;"><span>交通警情6</span></li>
+        <li class="c2 big2" style="top: 35%;left: 65%;"><span>求助1</span></li>
+        <li class="c3 big4" style="top: 25%;left: 35%;"><span>无效报警2</span></li>
+        <li class="c4 big5" style="top: 65%;left: 65%;"><span>投诉2</span></li>
+        <li class="c5 big6" style="top: 65%;left: 25%;"><span>灾害事故1</span></li>
+        <li class="c6 big1" style="top: 45%;left: 15%;"><span>刑事案件1</span></li>
+        <li class="c1 big0" style="top: 35%;left: 75%;"></li>
+        <li class="c2 big0" style="top: 85%;left: 55%;"></li>
+        <li class="c3 big0" style="top: 85%;left: 15%;"></li>
+
+      </ul>
+      <div id="lefttoday_bar"  style=" width:316px; height:190px;margin: 3px 20px;"></div>
+    </div>
+    <!--  lefttoday_bar end-->
+    </div>
+    <div class="leftclass">
+      <h2 class="tith2 pt12">警情级别</h2>
+      <div id="leftclass" style=" width:306px; height:224px;margin: 3px 20px;"></div>
+  </div>
+</div>
+<!--  left1 end -->
+<div class="left2">
+  <div class="leftbox2_table"><h2 class="tith2 pt14">今日接处警</h2>
+    <div class="left2_table">
+       <ul>
+            <li>
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="green">已处警</em><br>
+              处警人：张三<br>
+              处警时间：2018-06-22  14：28：39
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li class="bg">
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="yellow">未处警</em><br>
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li>
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="green">已处警</em><br>
+              处警人：张三<br>
+              处警时间：2018-06-22  14：28：39
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li class="bg">
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="yellow">未处警</em><br>
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li>
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="green">已处警</em><br>
+              处警人：张三<br>
+              处警时间：2018-06-22  14：28：39
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li class="bg">
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="yellow">未处警</em><br>
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li>
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="green">已处警</em><br>
+              处警人：张三<br>
+              处警时间：2018-06-22  14：28：39
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li class="bg">
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="yellow">未处警</em><br>
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li>
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="green">已处警</em><br>
+              处警人：张三<br>
+              处警时间：2018-06-22  14：28：39
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+            <li class="bg">
+            <p class="fl"><b>康定市公安局</b><br>
+              家里被盗，丢失了财务<br>
+              是否处警：<em class="yellow">未处警</em><br>
+            </p>
+            <p class="fr pt17">2018-06-22  14：28：39</p>
+            </li>
+       </ul>
+    </div>
+  </div>
+  <div class="leftclass"><h2 class="tith2 pt12">重大警情</h2>
+  <div id="leftbox2_table" style=" width:306px; height:224px;margin: 3px 20px;"></div>
+  </div>
+</div>
+<div class="mrbox">
+      <div class="mrbox_top">
+          <div class="mrbox_top_midd">
+              <div class="mrboxtm-mbox"><h2 class="tith2 pt17">警情警力地图分析</h2>
+                <div class="mrboxtm-map" style=" width:766px; height:424px;margin: 0 20px;">
+                   <ul>
+                     <li class="bluer" style="top:28%;left:12%">15</li>
+                     <li class="redr" style="top:31%;left:18%">13</li>
+                      <!--  石渠县-->
+                     <li class="bluer" style="top:31%;left:33%">15</li>
+                      <li class="redr" style="top:34%;left:36%">13</li>
+                       <!--  -->
+                      <li class="bluer" style="top:12%;left:43%">15</li>
+                      <li class="redr" style="top:15%;left:47%">13</li>
+                       <!--  -->
+                      <li class="bluer" style="top:22%;left:36%">15</li>
+                     <li class="redr" style="top:25%;left:41%">13</li>
+                      <!--  -->
+                     <li class="bluer" style="top:23%;left:57%">15</li>
+                    <li class="redr" style="top:16%;left:53%">13</li>
+                     <!--  -->
+                    <li class="bluer" style="top:26%;left:64%">15</li>
+                   <li class="redr" style="top:22%;left:67%">13</li>
+                   <!--  -->
+                   <li class="bluer" style="top:7%;left:68%">15</li>
+                  <li class="redr" style="top:15%;left:69%">13</li>
+                  <!--  丹巴-->
+                  <li class="bluer" style="top:32%;left:77%">15</li>
+                 <li class="redr" style="top:35%;left:80%">13</li>
+                 <!--  康定-->
+                 <li class="bluer" style="top:28%;left:81%">15</li>
+                <li class="redr" style="top:27%;left:84%">13</li>
+                <!--  泸定-->
+                <li class="bluer" style="top:34%;left:69%">15</li>
+               <li class="redr" style="top:37%;left:73%">13</li>
+               <!--  雅江-->
+               <li class="bluer" style="top:48%;left:87%">15</li>
+              <li class="redr" style="top:47%;left:83%">13</li>
+              <!--  九龙-->
+              <li class="bluer" style="top:48%;left:60%">15</li>
+             <li class="redr" style="top:56%;left:62%">13</li>
+             <!--  理塘-->
+             <li class="bluer" style="top:68%;left:60%">15</li>
+            <li class="redr" style="top:70%;left:63%">13</li>
+            <!--  巴塘-->
+            <li class="bluer" style="top:67%;left:67%">15</li>
+           <li class="redr" style="top:67%;left:71%">13</li>
+           <!--  乡城-->
+           <li class="bluer" style="top:82%;left:70%">15</li>
+          <li class="redr" style="top:84%;left:73%">13</li>
+          <!--  得荣-->
+          <li class="bluer" style="top:68%;left:60%">15</li>
+         <li class="redr" style="top:70%;left:63%">13</li>
+         <!--  巴塘-->
+         <li class="bluer" style="top:71%;left:78%">15</li>
+        <li class="redr" style="top:74%;left:81%">13</li>
+        <!--  稻城-->
+
+                    <li class="bluer" style="top:31%;left:57%">15</li>
+                    <li class="redr" style="top:33%;left:53%">13</li>
+                    <li class="bluer" style="top:44%;left:47%">15</li>
+                    <li class="redr" style="top:48%;left:52%">13</li>
+                   </ul>
+                 </div>
+              </div>
+<!--  map end-->
+                <div class="mrboxtm-b1"><h2 class="tith2 pt14">涉稳警情</h2>
+                  <div class="mrboxtm-b1wp">
+                    <div id="mrboxtm1" class="fl" style=" width:265px; height:140px;"></div>
+                    <div class="widget-inline-box fl" style="width:105px;">
+                      <p>涉稳总数</p>
+      								<h3 class="pt12 ceeb1fd">8654</h3>
+      								<h4 class="text-muted pt12">环比<img src="img/iconup.png" height="16" />2%</h4>
+      							</div>
+                  </div>
+                </div>
+                <div class="mrboxtm-b2"><h2 class="tith2 pt14">案件统计</h2>
+                  <div class="mrboxtm-b2wp">
+                    <div id="mrboxtm2" style=" width:305px; height:120px; margin-top:5px;margin-left:20px; margin-bottom:5px"></div>
+                    <div class="mrboxtm_text">
+                      <div class="mrbtext_info">警情转案件数：<b>18<b></div>
+                      <div class="mrbtext_info">破案数：<b>18<b></div>
+                      </div>
+                  </div>
+                </div>
+
+          </div>
+        <!-- mrbox_top_midd end -->
+        <div class="mrbox_top_right">
+          <div class="mrbox_tr_box"><h2 class="tith2 pt6">警力分析</h2>
+            <div class="mrtop1" style=" width:305px;">
+              <div class="widget-inline-box text-center fl">
+                <p>今日出勤警力数</p>
+								<h3 class="pt6 ceeb1fd">8654</h3>
+								<h4 class="text-muted pt6">环比<img src="img/iconup.png" height="16" />2%</h4>
+							</div>
+              <div class="widget-inline-box text-center fl">
+                 <p>今日警力装备数</p>
+								<h3 class="pt6 c24c9ff">8654</h3>
+								<h4 class="text-muted pt6">环比<img src="img/icondown.png" height="16" />3%</h4>
+							</div>
+            </div>
+            <!-- mrtop1  -->
+            <div class="mrtop2">
+              <div id="mrtop2" style=" width:305px; height:190px;"></div>
+              <h4 class="tith4 pt6">警力人员区域分布</h4>
+            </div>
+            <!-- mrtop2  -->
+            <div class="mrtop3">
+              <div id="mrtop3" style=" width:305px; height:210px;"></div>
+              <h4 class="tith4">警力装备数量统计</h4>
+            </div>
+            <!-- mrtop3  -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mrbox_bottom">
+          <div class="rbottom_box1"><h2 class="tith2 pt12">警情趋势</h2>
+          <div id="rbottom_box1" style=" width:358px; height:224px;margin: 3px 22px;"></div></div>
+          <div class="rbottom_box2"><h2 class="tith2 pt12">警情环比分析</h2>
+          <div id="rbottom_box2" style=" width:305px; height:224px;margin: 3px 22px;"></div></div>
+          <div class="rbottom_box3"><h2 class="tith2 pt12">警情同比分析</h2>
+          <div id="rbottom_box3" style=" width:358px; height:224px;margin: 3px 22px;"></div></div>
+
+      </div>
+</div>
+<script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('lefttoday_bar'));
+        option = {
+            // backgroundColor: 'rgba(1,202,217,.2)',
+            grid: {
+                      left:50,
+                      right:10,
+                      top:10,
+                      bottom:20
+                    },
+
+      toolbox: {
+          feature: {
+              dataView: {show: true, readOnly: false},
+              magicType: {show: true, type:'bar'},
+              restore: {show: true},
+              saveAsImage: {show: true}
+          }
+      },
+
+      xAxis: [
+          {
+              type: 'category',
+              axisLine:{
+                lineStyle:{
+                  color:'rgba(255,255,255,.2)'
+                }
+              },
+              splitLine:{
+                lineStyle:{
+                  color:'rgba(255,255,255,.1)'
+                }
+              },
+              axisLabel:{
+                  color:"rgba(255,255,255,.7)"
+              },
+
+              data: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+              axisPointer: {
+                  type: 'shadow'
+              }
+          }
+      ],
+      yAxis: [
+          {
+              type: 'value',
+              name: '',
+              min: 0,
+              max: 250,
+              interval: 50,
+              axisLine:{
+                lineStyle:{
+                  color:'rgba(255,255,255,.3)'
+                }
+              },
+              splitLine:{
+                lineStyle:{
+                  color:'rgba(255,255,255,.01)'
+                }
+              },
+
+              axisLabel: {
+                  formatter: '{value} ml'
+              }
+          }
+      ],
+      series: [
+
+          {
+              name:'蒸发量',
+              type:'bar',
+              itemStyle: {
+                              normal: {
+                                  color: new echarts.graphic.LinearGradient(
+                                      0, 0, 0, 1,
+                                      [
+                                          {offset: 0, color: '#00b7ee'},
+                                          {offset: 1, color: '#00b7ee'}
+                                      ]
+                                  )
+                              }
+                          },
+              data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+          }
+      ]
+  };
+        myChart.setOption(option);
+    </script>
+<script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('leftclass'));
+        option = {
+          color:['#f1ff00','#00c1ff', '#61a0a8', '#d48265', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
+            backgroundColor: 'rgba(1,202,217,.2)',
+            grid: {
+											left:20,
+											right:20,
+											top:40,
+											bottom:20
+										},
+           radar: {
+               name: {
+                      textStyle: {
+                          fontSize: 10,
+                          color: 'rgba(255,255,255,.8)'
+                      }
+                  },
+                  splitLine: {
+                      lineStyle: {
+                          color: [
+                              'rgba(1,202,217,.01)', 'rgba(1,202,217,.01)'
+                          ].reverse()
+                      }
+                  },
+                  splitArea: {
+                      show: false
+                  },
+                  axisLine: {
+                      lineStyle: {
+                          color: 'rgba(1,202,217,.7)'
+                      }
+                  },
+               indicator: [
+                  { name: '红色警情', max: 6500},
+                  { name: '橙色警情', max: 16000},
+                  { name: '黄色警情', max: 30000},
+                  { name: '绿色警情', max: 44000}
+               ]
+           },
+           series: [{
+               name: '',
+               type: 'radar',
+               radius : '45%',
+               center: ['50%', '50%'],
+               data : [
+                   {
+                       value : [4300, 10000, 28000, 19000],
+                       name : ''
+                   },
+                    {
+                       value : [5000, 14000,  22000, 41000],
+                       name : ''
+                   }
+               ]
+           }]
+        };
+        myChart.setOption(option);
+    </script>
+    <script type="text/javascript">
+            var myChart = echarts.init(document.getElementById('leftbox2_table'));
+            option = {
+              color:['#d2d17c','#7fd7b1', '#5578cf', '#5ebbeb', '#d16ad8','#f8e19a',  '#00b7ee', '#81dabe','#5fc5ce'],
+                backgroundColor: 'rgba(1,202,217,.2)',
+                grid: {
+    											left:20,
+    											right:20,
+    											top:0,
+    											bottom:20
+    										},
+                        series : [
+                 {
+                     name: '访问来源',
+                     type: 'pie',
+                     radius : '45%',
+                     center: ['50%', '50%'],
+                     data:[
+                         {value:335, name:'重大交通事故'},
+                         {value:310, name:'刑事案件'},
+                         {value:234, name:'火灾'},
+                         {value:135, name:'抢劫'},
+                         {value:158, name:'入室盗窃'},
+                         {value:105, name:'盗窃机动车'},
+                         {value:185, name:'盗窃车内饰品'},
+                         {value:115, name:'诈骗'}
+                     ],
+                     itemStyle: {
+                         emphasis: {
+                             shadowBlur: 10,
+                             shadowOffsetX: 0,
+                             shadowColor: 'rgba(0, 0, 0, 0.5)'
+                         }
+                     }
+                 }
+             ]
+            };
+            myChart.setOption(option);
+        </script>
+        <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('mrboxtm1'));
+                option = {
+                  color:['#7ecef4'],
+                    // backgroundColor: 'rgba(1,202,217,.2)',
+                        angleAxis: {
+                          axisLine:{
+                         lineStyle:{
+                           color:'rgba(255,255,255,.2)'
+                         }
+                       },
+                       splitLine:{
+                         lineStyle:{
+                           color:'rgba(255,255,255,.1)'
+                         }
+                       },
+                       axisLabel:{
+                           color:"rgba(255,255,255,.7)"
+                       }
+                        },
+                        radiusAxis: {
+                            type: 'category',
+                            axisLine:{
+                         lineStyle:{
+                           color:'rgba(255,255,255,.2)'
+                         }
+                       },
+                       splitLine:{
+                         lineStyle:{
+                           color:'rgba(255,255,255,.1)'
+                         }
+                       },
+                       axisLabel:{
+                           color:"rgba(255,255,255,.7)"
+                       },
+
+                            data: ['周一', '周二', '周三', '周四'],
+                            z: 10
+                        },
+                        polar: {
+                        },
+                        series: [{
+                            type: 'bar',
+                            data: [1, 2, 3, 4],
+                            coordinateSystem: 'polar',
+                            name: 'A',
+                            stack: 'a'
+                        }, {
+                            type: 'bar',
+                            data: [2, 4, 6, 8],
+                            coordinateSystem: 'polar',
+                            name: 'B',
+                            stack: 'a'
+                        }, {
+                            type: 'bar',
+                            data: [1, 2, 3, 4],
+                            coordinateSystem: 'polar',
+                            name: 'C',
+                            stack: 'a'
+                        }]
+                    };
+                myChart.setOption(option);
+            </script>
+            <script type="text/javascript">
+                    var myChart = echarts.init(document.getElementById('mrboxtm2'));
+                    option = {
+                        // backgroundColor: 'rgba(1,202,217,.2)',
+                        grid: {
+            											left:40,
+            											right:20,
+            											top:20,
+            											bottom:20
+            										},
+
+                  toolbox: {
+                      feature: {
+                          dataView: {show: true, readOnly: false},
+                          magicType: {show: true, type:'bar'},
+                          restore: {show: true},
+                          saveAsImage: {show: true}
+                      }
+                  },
+                  legend: {
+                    top:5,
+                    textStyle:{
+                      fontSize: 10,
+                      color:'rgba(255,255,255,.7)'
+                    },
+                      data:['破案数','立案数']
+                  },
+                  xAxis: [
+                      {
+                          type: 'category',
+                          axisLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.2)'
+    												}
+    											},
+    											splitLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.1)'
+    												}
+    											},
+    											axisLabel:{
+    													color:"rgba(255,255,255,.7)"
+    											},
+
+                          data: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+                          axisPointer: {
+                              type: 'shadow'
+                          }
+                      }
+                  ],
+                  yAxis: [
+                      {
+                          type: 'value',
+                          name: '',
+                          min: 0,
+                          max: 250,
+                          interval: 50,
+                          axisLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.3)'
+    												}
+    											},
+    											splitLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.01)'
+    												}
+    											},
+
+                          axisLabel: {
+                              formatter: '{value} ml'
+                          }
+                      },
+                      {
+                          type: 'value',
+                          name: '',
+                          max: 25,
+                          interval: 5,
+                          axisLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.3)'
+    												}
+    											},
+    											splitLine:{
+    												lineStyle:{
+    													color:'rgba(255,255,255,.1)'
+    												}
+    											},
+                          axisLabel: {
+                              formatter: '{value} °C'
+                          }
+                      }
+                  ],
+                  series: [
+
+                      {
+                          name:'破案数',
+                          type:'bar',
+                          itemStyle: {
+                                          normal: {
+                                              color: new echarts.graphic.LinearGradient(
+                                                  0, 0, 0, 1,
+                                                  [
+                                                      {offset: 0, color: 'rgba(230,253,139,.8)'},
+                                                      {offset: 1, color: 'rgba(41,220,205,.8)'}
+                                                  ]
+                                              )
+                                          }
+                                      },
+                          data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                      },
+                      {
+                          name:'立案数',
+                          type:'bar',
+                          itemStyle: {
+                                          normal: {
+                                              color: new echarts.graphic.LinearGradient(
+                                                  0, 0, 0, 1,
+                                                  [
+                                                    {offset: 0, color: 'rgba(0,255,255,.8)'},
+                                                    {offset: 1, color: 'rgba(3,41,118,.8)'}
+                                                  ]
+                                              )
+                                          }
+                                      },
+                          data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+                      }
+                  ]
+              };
+                    myChart.setOption(option);
+                </script>
+        <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('rbottom_box1'));
+                option = {
+                  color:['#d2d17c','#7fd7b1', '#5578cf', '#5ebbeb', '#d16ad8','#f8e19a',  '#00b7ee', '#81dabe','#5fc5ce'],
+                    backgroundColor: 'rgba(1,202,217,.2)',
+                    grid: {
+        											left:20,
+        											right:30,
+        											top:0,
+        											bottom:20
+        										},
+                            legend: {
+                              top: 5,
+                              left:20,
+                                textStyle:{
+                                  fontSize:10,
+                                  color:'rgba(255,255,255,.6)'
+                                },
+                        data:['2014年','2015年','2016年','2017年','2018年']
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    toolbox: {
+                        feature: {
+                            saveAsImage: {}
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        axisLine:{
+                          lineStyle:{
+                            color:'rgba(255,255,255,.2)'
+                          }
+                        },
+                        splitLine:{
+                          lineStyle:{
+                            color:'rgba(255,255,255,.1)'
+                          }
+                        },
+                        axisLabel:{
+                            color:"rgba(255,255,255,.7)"
+                        },
+                        data: ['周一','周二','周三','周四','周五','周六','周日']
+                    },
+                    yAxis: {
+                        type: 'value',
+                        axisLine:{
+                          lineStyle:{
+                            color:'rgba(255,255,255,.2)'
+                          }
+                        },
+                        splitLine:{
+                          lineStyle:{
+                            color:'rgba(255,255,255,.1)'
+                          }
+                        },
+                        axisLabel:{
+                            color:"rgba(255,255,255,.7)"
+                        },
+                    },
+                    series: [
+                        {
+                            name:'2014年',
+                            type:'line',
+                            stack: '总量',
+                              areaStyle: {normal: {}},
+                            data:[120, 132, 101, 134, 90, 230, 210]
+                        },
+                        {
+                            name:'2015年',
+                            type:'line',
+                            stack: '总量',
+                            data:[220, 182, 191, 234, 290, 330, 310]
+                        },
+                        {
+                            name:'2016年',
+                            type:'line',
+                            stack: '总量',
+                            data:[150, 232, 201, 154, 190, 330, 410]
+                        },
+                        {
+                            name:'2017年',
+                            type:'line',
+                            stack: '总量',
+
+                            data:[320, 332, 301, 334, 390, 330, 320]
+                        },
+                        {
+                            name:'2018年',
+                            type:'line',
+                            stack: '总量',
+                            data:[820, 932, 901, 934, 1290, 1330, 1320]
+                        }
+                    ]
+                    };
+                myChart.setOption(option);
+            </script>
+        <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('rbottom_box2'));
+                var data = [
+                    [[28604,77,17099,'Australia',1990],[31163,77.4,2440,'Canada',1990],[1516,68,1605773,'China',1990],[13670,74.7,10082,'Cuba',1990],[28599,75,49805,'Finland',1990],[29476,77.1,569499,'France',1990],[31476,75.4,789237,'Germany',1990],[28666,78.1,254830,'Iceland',1990],[1777,57.7,870776,'India',1990],[29550,79.1,129285,'Japan',1990],[2076,67.9,201954,'North Korea',1990],[12087,72,42954,'South Korea',1990],[24021,75.4,33934,'New Zealand',1990],[43296,76.8,4240375,'Norway',1990],[10088,70.8,381958,'Poland',1990],[19349,69.6,1475652,'Russia',1990],[10670,67.3,53905,'Turkey',1990],[26424,75.7,57117,'United Kingdom',1990],[37062,75.4,252810,'United States',1990]],
+                    [[44056,81.8,23973,'Australia',2015],[43294,81.7,35927,'Canada',2015],[13334,76.9,1376043,'China',2015],[21291,78.5,11562,'Cuba',2015],[38923,80.8,55057,'Finland',2015],[37599,81.9,64345,'France',2015],[44053,81.1,80545,'Germany',2015],[42182,82.8,329425,'Iceland',2015],[5903,66.8,1311027,'India',2015],[36162,83.5,126571,'Japan',2015],[1390,71.4,251317,'North Korea',2015],[34644,80.7,503439,'South Korea',2015],[34186,80.6,4528526,'New Zealand',2015],[64304,81.6,5210967,'Norway',2015],[24787,77.3,386194,'Poland',2015],[23038,73.13,143918,'Russia',2015],[19360,76.5,78630,'Turkey',2015],[38225,81.4,64715810,'United Kingdom',2015],[53354,79.1,321771,'United States',2015]]
+                ];
+
+                option = {
+                    backgroundColor: 'rgba(1,202,217,.2)',
+                    grid: {
+        											left:40,
+        											right:20,
+        											top:40,
+        											bottom:30
+        										},
+                    title: {
+                      top: 5,
+                      left:20,
+                        textStyle:{
+                          fontSize:10,
+                          color:'rgba(255,255,255,.6)'
+                        },
+                        text: '环比类型：日环比'
+                    },
+                    legend: {
+                        right: 10,
+                        top: 5,
+                        textStyle:{
+                          fontSize:10,
+                          color:'rgba(255,255,255,.6)'
+                        },
+                        data: ['1990', '2015']
+                    },
+                    xAxis: {
+                      axisLine:{
+                        lineStyle:{
+                          color:'rgba(255,255,255,.2)'
+                        }
+                      },
+                      splitLine:{
+                        lineStyle:{
+                          color:'rgba(255,255,255,.1)'
+                        }
+                      },
+                      axisLabel:{
+                          color:"rgba(255,255,255,.7)"
+                      }
+                    },
+                    yAxis: {
+                      axisLine:{
+                        lineStyle:{
+                          color:'rgba(255,255,255,.2)'
+                        }
+                      },
+                      splitLine:{
+                        lineStyle:{
+                          color:'rgba(255,255,255,.1)'
+                        }
+                      },
+                      axisLabel:{
+                          color:"rgba(255,255,255,.7)"
+                      },
+                        scale: true
+                    },
+                    series: [{
+                        name: '1990',
+                        data: data[0],
+                        type: 'scatter',
+                        symbolSize: function (data) {
+                            return Math.sqrt(data[2]) / 5e2;
+                        },
+                        label: {
+                            emphasis: {
+                                show: true,
+                                formatter: function (param) {
+                                    return param.data[3];
+                                },
+                                position: 'top'
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                shadowBlur: 10,
+                                shadowColor: 'rgba(120, 36, 50, 0.5)',
+                                shadowOffsetY: 5,
+                                color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                    offset: 0,
+                                    color: 'rgb(251, 118, 123)'
+                                }, {
+                                    offset: 1,
+                                    color: 'rgb(204, 46, 72)'
+                                }])
+                            }
+                        }
+                    }, {
+                        name: '2015',
+                        data: data[1],
+                        type: 'scatter',
+                        symbolSize: function (data) {
+                            return Math.sqrt(data[2]) / 5e2;
+                        },
+                        label: {
+                            emphasis: {
+                                show: true,
+                                formatter: function (param) {
+                                    return param.data[3];
+                                },
+                                position: 'top'
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                shadowBlur: 10,
+                                shadowColor: 'rgba(25, 100, 150, 0.5)',
+                                shadowOffsetY: 5,
+                                color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                                    offset: 0,
+                                    color: 'rgb(129, 227, 238)'
+                                }, {
+                                    offset: 1,
+                                    color: 'rgb(25, 183, 207)'
+                                }])
+                            }
+                        }
+                    }]
+                };
+                myChart.setOption(option);
+            </script>
+
+        <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('rbottom_box3'));
+                option = {
+                    backgroundColor: 'rgba(1,202,217,.2)',
+                    grid: {
+        											left:60,
+        											right:60,
+        											top:70,
+        											bottom:40
+        										},
+
+              toolbox: {
+                  feature: {
+                      dataView: {show: true, readOnly: false},
+                      magicType: {show: true, type: ['line', 'bar']},
+                      restore: {show: true},
+                      saveAsImage: {show: true}
+                  }
+              },
+              legend: {
+                top:10,
+                textStyle:{
+                  fontSize: 10,
+                  color:'rgba(255,255,255,.7)'
+                },
+                  data:['2017年','2018年','同比增速']
+              },
+              xAxis: [
+                  {
+                      type: 'category',
+                      axisLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.2)'
+												}
+											},
+											splitLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.1)'
+												}
+											},
+											axisLabel:{
+													color:"rgba(255,255,255,.7)"
+											},
+
+                      data: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+                      axisPointer: {
+                          type: 'shadow'
+                      }
+                  }
+              ],
+              yAxis: [
+                  {
+                      type: 'value',
+                      name: '',
+                      min: 0,
+                      max: 250,
+                      interval: 50,
+                      axisLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.3)'
+												}
+											},
+											splitLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.01)'
+												}
+											},
+
+                      axisLabel: {
+                          formatter: '{value} ml'
+                      }
+                  },
+                  {
+                      type: 'value',
+                      name: '',
+                      max: 25,
+                      interval: 5,
+                      axisLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.3)'
+												}
+											},
+											splitLine:{
+												lineStyle:{
+													color:'rgba(255,255,255,.1)'
+												}
+											},
+                      axisLabel: {
+                          formatter: '{value} °C'
+                      }
+                  }
+              ],
+              series: [
+
+                  {
+                      name:'2017年',
+                      type:'bar',
+                      itemStyle: {
+                                      normal: {
+                                          color: new echarts.graphic.LinearGradient(
+                                              0, 0, 0, 1,
+                                              [
+                                                  {offset: 0, color: '#b266ff'},
+                                                  {offset: 1, color: '#121b87'}
+                                              ]
+                                          )
+                                      }
+                                  },
+                      data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                  },
+                  {
+                      name:'2018年',
+                      type:'bar',
+                      itemStyle: {
+                                      normal: {
+                                          color: new echarts.graphic.LinearGradient(
+                                              0, 0, 0, 1,
+                                              [
+                                                  {offset: 0, color: '#00f0ff'},
+                                                  {offset: 1, color: '#032a72'}
+                                              ]
+                                          )
+                                      }
+                                  },
+                      data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+                  },
+                  {
+                      name:'同比增速',
+                      type:'line',
+                      itemStyle: {
+                                      normal: {
+                                          color: new echarts.graphic.LinearGradient(
+                                              0, 0, 0, 1,
+                                              [
+                                                  {offset: 0, color: '#fffb34'},
+                                                  {offset: 1, color: '#fffb34'}
+                                              ]
+                                          )
+                                      }
+                                  },
+                      yAxisIndex: 1,
+                      data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+                  }
+              ]
+          };
+                myChart.setOption(option);
+            </script>
+
+            <script type="text/javascript">
+                    var myChart = echarts.init(document.getElementById('mrtop2'));
+                    var data = [
+                        [5000, 10000, 6785.71],
+                        [4000, 10000, 6825],
+                        [3000, 6500, 4463.33],
+                        [2500, 5600, 3793.83],
+                        [2000, 4000, 3060],
+                        [2000, 4000, 3222.33],
+                        [2500, 4000, 3133.33],
+                        [1800, 4000, 3100],
+                        [1500, 1800, 1650]
+                    ];
+                    var cities = ['甘孜县', '泸定县', '炉霍县', '色达县', '白玉县', '得荣县', '雅江县', '九龙县', '康定市' ];
+                    var barHeight = 50;
+                    option = {
+                      color:['#7ecef4'],
+                        // backgroundColor: 'rgba(1,202,217,.2)',
+                        grid: {
+            											left:60,
+            											right:60,
+            											top:20,
+            											bottom:40
+            										},
+                          legend: {
+                                 show: true,
+                                 data: ['价格范围', '均值']
+                             },
+                             angleAxis: {
+                                 type: 'category',
+                                 axisLine:{
+                                  lineStyle:{
+                                    color:'rgba(255,255,255,.2)'
+                                  }
+                                },
+                                splitLine:{
+                                  lineStyle:{
+                                    color:'rgba(255,255,255,.1)'
+                                  }
+                                },
+                                axisLabel:{
+                                    color:"rgba(255,255,255,.7)"
+                                },
+                                 data: cities
+                             },
+                             radiusAxis: {
+                               axisLine:{
+                                lineStyle:{
+                                  color:'rgba(255,255,255,.2)'
+                                }
+                              },
+                              splitLine:{
+                                lineStyle:{
+                                  color:'rgba(255,255,255,.1)'
+                                }
+                              },
+                              axisLabel:{
+                                  color:"rgba(255,255,255,.5)"
+                              }
+                             },
+                             polar: {
+                             },
+                             series: [{
+                                 type: 'bar',
+                                 itemStyle: {
+                                     normal: {
+                                         color: 'transparent'
+                                     }
+                                 },
+                                 data: data.map(function (d) {
+                                     return d[0];
+                                 }),
+                                 coordinateSystem: 'polar',
+                                 stack: '最大最小值',
+                                 silent: true
+                             }, {
+                                 type: 'bar',
+                                 data: data.map(function (d) {
+                                     return d[1] - d[0];
+                                 }),
+                                 coordinateSystem: 'polar',
+                                 name: '价格范围',
+                                 stack: '最大最小值'
+                             }, {
+                                 type: 'bar',
+                                 itemStyle: {
+                                     normal: {
+                                         color: 'transparent'
+                                     }
+                                 },
+                                 data: data.map(function (d) {
+                                     return d[2] - barHeight;
+                                 }),
+                                 coordinateSystem: 'polar',
+                                 stack: '均值',
+                                 silent: true,
+                                 z: 10
+                             }, {
+                                 type: 'bar',
+                                 data: data.map(function (d) {
+                                     return barHeight * 2
+                                 }),
+                                 coordinateSystem: 'polar',
+                                 name: '均值',
+                                 stack: '均值',
+                                 barGap: '-100%',
+                                 z: 10
+                             }],
+                             legend: {
+                                 show: true,
+                                 data: ['A', 'B', 'C']
+                             }
+                         };
+                    myChart.setOption(option);
+                </script>
+                <script type="text/javascript">
+                        var myChart = echarts.init(document.getElementById('mrtop3'));
+                        option = {
+                          color:['#7ecef4'],
+                            // backgroundColor: 'rgba(1,202,217,.2)',
+                            grid: {
+                											left:10,
+                											right:40,
+                											top:0,
+                											bottom:0,
+                                      containLabel: true
+                										},
+
+                                  xAxis: {
+                                      type: 'value',
+                                      axisLine:{
+                                       lineStyle:{
+                                         color:'rgba(255,255,255,0)'
+                                       }
+                                     },
+                                     splitLine:{
+                                       lineStyle:{
+                                         color:'rgba(255,255,255,0)'
+                                       }
+                                     },
+                                     axisLabel:{
+                                         color:"rgba(255,255,255,0)"
+                                     },
+                                      boundaryGap: [0, 0.01]
+                                  },
+                                  yAxis: {
+                                      type: 'category',
+                                      axisLine:{
+                                       lineStyle:{
+                                         color:'rgba(255,255,255,.5)'
+                                       }
+                                     },
+                                     splitLine:{
+                                       lineStyle:{
+                                         color:'rgba(255,255,255,.1)'
+                                       }
+                                     },
+                                     axisLabel:{
+                                         color:"rgba(255,255,255,.5)"
+                                     },
+                                      data: ['枪支','警服','弹药','警车','对讲机','电击棒','强化手电','催泪喷射器']
+                                  },
+                                  series: [
+                                      {
+                                          name: '2011年',
+                                          type: 'bar',
+                                          itemStyle: {
+                                              normal: {
+                                                  color: new echarts.graphic.LinearGradient(
+                                                      1, 0, 0, 1,
+                                                      [
+                                                          {offset: 0, color: 'rgba(230,253,139,.7)'},
+                                                          {offset: 1, color: 'rgba(41,220,205,.7)'}
+                                                      ]
+                                                  )
+                                              }
+                                          },
+                                          data: [18203, 23489, 29034, 104970, 131744, 430230, 530230, 630230]
+                                      }
+                                  ]
+                              };
+                        myChart.setOption(option);
+                    </script>
+</body>
+</html>
